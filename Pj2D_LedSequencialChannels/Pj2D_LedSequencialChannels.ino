@@ -64,12 +64,6 @@ void turnOnAll()
     delay(1000); // Wait for 1000 millisecond(s)
 }
 
-// void turnOffAll()
-// {
-//     digitalWrite(listNumbers[first], LOW);
-//     digitalWrite(listNumbers[last], LOW);
-// }
-
 void turnOffAll()
 {
     for (int i = 0; i < 5; i++)
@@ -87,6 +81,7 @@ void loop()
     {
         turnOffAll();
     }
+
     if (channelOne && !channelTwo)
     {
         for (int i = 0; i < 5; i++)
@@ -95,6 +90,7 @@ void loop()
             delay(200); // Wait for 1000 millisecond(s)
         }
     }
+
     if (!channelOne && channelTwo)
     {
         ligaOuDesliga(true);
@@ -109,6 +105,7 @@ void loop()
             restoParImparComparator = 0;
         }
     }
+    
     if (channelOne && channelTwo)
     {
         turnOnAll();

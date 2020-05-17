@@ -7,7 +7,6 @@ void setup()
   pinMode(11, OUTPUT);
   pinMode(10, OUTPUT);
   pinMode(9, OUTPUT);
-
 }
 
 void pisca(int pino)
@@ -21,7 +20,8 @@ void pisca(int pino)
 void loop()
 {
   int i = 0;
-  for(i = 0; i < 5; i++){
+  for (i = 0; i < 5; i++)
+  {
     pisca(i);
   }
 }

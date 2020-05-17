@@ -1,5 +1,4 @@
 
-int restoParImparComparator = 0;
 int list[5] = {13, 12, 11, 10, 9};
   
 void setup()
